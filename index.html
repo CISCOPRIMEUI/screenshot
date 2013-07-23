@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset=utf-8>
+		<meta name="viewport" content="width=620">
+		<title>Screen Shot Proof of Concept</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen"/>
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen"/>
+		<link rel="stylesheet" href="css/screenshot.css" type="text/css" media="screen"/>
+		<style type="text/css">
+      		body {
+        		padding-top: 60px;
+       			padding-bottom: 40px;
+      		}
+    	</style>
+	</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+      		<div class="navbar-inner">
+        		<div class="container">
+          			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+          			</a>
+          			<a class="brand" href="#_">Screenshot API</a>
+          			<div class="nav-collapse collapse">
+            			<ul class="nav">
+              				<li class="active"><a href="#_">Home</a></li>
+              				<li><a href="#_">About</a></li>
+              				<li><a href="#_">Contact</a></li>
+            			</ul>
+          			</div>
+        		</div>
+      		</div>
+    	</div>
+    	<div class="container">
+    		<div class="hero-unit">
+        		<h1>Screenshot API</h1>
+        		<p>This is an example page for usage for the screenshot implementation. This solution is to be implemented to allow users to take screenshots and save them for error submission</p>
+        		<button  data-html2canvas-ignore="true">Take Screenshot</button>
+      		</div>
+      		<div class="row">
+        		<div class="span3">
+          			<h2>Simple</h2>
+          			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	          		<p><a class="btn" href="#_">View details »</a></p>
+        		</div>
+       			<div class="span3">
+	        		<h2>Privacy Aware</h2>
+	        		<p>People want to protect their information and data with their screen shots. By using this api the user has the option to black out any section of sensitive information before taking the photo</p>
+	        		<p><a class="btn" href="#_">View details »</a></p>
+	       		</div>
+        		<div class="span3">
+          			<h2>Information Specific</h2>
+          			<p>Most of Cisco's pages have large amounts of information and finding an error or issue can be like finding a needle in the haystack. Using this API users can identify the sections they want to bring attention to in order to make the issue finding quicker.</p>
+          			<p><a class="btn" href="#_">View details »</a></p>
+        		</div>
+        		<div class="span3">
+   					<label for="zoominput">Zoom</label>
+   					<select id="rangeinput" onchange="CLOCK.zoom();">
+       					<option value="1" selected="selected">1x</option>
+       					<option value="2">2x</option>
+       					<option value="3">3x</option>
+       					<option value="4">4x</option>
+       					<option value="5">5x</option>
+      				</select>
+    			</div>
+    			<button
+    		</div>
+		</div>
+		<script>
+		</script>
+		<script src="js/jquery.js"></script>
+		<script src="js/screenshot.js"></script>
+		<script type="text/javascript">
+			//convert all svg to canvas
+
+			$(document).ready(function() {
+
+        		Feedback({h2cPath:'js/html2canvas.js'});
+
+      		}); 
+      		
+		</script>
+	</body>
+</html>
